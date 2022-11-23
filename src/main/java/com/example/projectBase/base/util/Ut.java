@@ -1,10 +1,10 @@
 package com.example.projectBase.base.util;
 
 
+import com.example.projectBase.base.dto.RsData;
+import com.example.projectBase.config.AppConfig;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mylog.base.dto.RsData;
-import com.mylog.config.AppConfig;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
