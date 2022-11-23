@@ -19,12 +19,12 @@ public class SecurityConfig {
         http.authorizeRequests().antMatchers("/**").permitAll()
                 .and()
                 .formLogin()
-                .loginPage("/user/login") //로그인 url
+                .loginPage("/member/login") //로그인 url
                 .defaultSuccessUrl("/") //로그인 성공시 이동할 url
                 .and()
                 .logout()
                 //로그아웃 url
-                .logoutRequestMatcher(new AntPathRequestMatcher("/user/logout"))
+                .logoutRequestMatcher(new AntPathRequestMatcher("/member/logout"))
                 .logoutSuccessUrl("/") //로그아웃 성공시 이동할 url
                 .invalidateHttpSession(true) //로그아웃시 생성된 세션 삭제 활성화
         ;
