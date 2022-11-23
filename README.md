@@ -1,0 +1,30 @@
+# product_base
+- yml
+  - application.yml
+  - application-dev.yml
+
+- base
+  - RsData
+  - DtoUt
+  - TestInitData
+  - Ut
+  - DataNotFoundException
+  - BaseEntity
+    - id
+    - createDate
+    - updateDate
+- build.gradle
+  - web
+  - devtools
+  - security
+  - lombok
+  - mariadb
+  - validation
+  - thymeleaf
+  - jpa
+- SecurityConfig
+  - 모든 페이지 접근가능
+  - login - /member/login
+  - logout - /member/logout
+  - passwordIncoder Bean 설정
+  - authenticationManager Bean 설정
